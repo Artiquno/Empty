@@ -18,11 +18,11 @@
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
 
         <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/img/favicon.ico"/>
@@ -266,7 +266,7 @@
                                     <div class="row">
                                         <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                             <div class="margin-t-10 sm-margin-t-0">
-                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>This is custom made.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                                                 <ul class="list-inline work-popup-tag">
                                                     <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
@@ -565,7 +565,7 @@
             <div class="gmap">
                 <div id="map" class="map height-400"></div>
                 <address class="gmap-address">
-                    <p class="color-heading margin-b-0">277 Bedford Avenue, Brooklyn, NY 11211, New York, USA</p>
+                    <p class="color-heading margin-b-0">FSHN etj etj etj</p>
                 </address>
             </div>
             <!-- End Google Map -->
