@@ -31,7 +31,7 @@ public partial class Temp : System.Web.UI.Page
                 Description = "DESCRIPTION: " + url,
                 ImageUrl = url,
                 Title = url,
-                Genre = new List<string>(fInfo.Name.Split('-'))
+                Genre = new List<string>(fInfo.Name.Split(new char[] { '-', '.' }))
             });
         }
 
