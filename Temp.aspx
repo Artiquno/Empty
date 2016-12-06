@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" CodeFile="~/Temp.aspx.cs" AutoEventWireup="true" Inherits="Temp" %>
 
+<%@ Register Src="~/Controls/TempControl.ascx" TagPrefix="uc1" TagName="TempControl" %>
+
+
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     
@@ -13,16 +16,16 @@
 
         <!-- GLOBAL MANDATORY STYLES -->
         <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
+        <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/animate.css" rel="stylesheet">
+        <link href="/vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css"/>
+        <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
 
         <!-- THEME STYLES -->
-        <link href="css/layout.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/layout.css" rel="stylesheet" type="text/css"/>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="/img/favicon.ico"/>
@@ -249,202 +252,11 @@
             <div class="content-md container">
                 <!-- Masonry Grid -->
                 <div class="masonry-grid row row-space-2">
-                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
-                        <!-- Work -->
-                        <div class="work work-popup-trigger">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/800x400/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-popup-overlay">
-                                <div class="work-popup-content">
-                                    <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                    <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
-                                        <span>Clean &amp; Minimalistic Design</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p>This is custom made.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
-                        <!-- Work -->
-                        <div class="work work-popup-trigger">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-popup-overlay">
-                                <div class="work-popup-content">
-                                    <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                    <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
-                                        <span>Clean &amp; Minimalistic Design</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                        <!-- Work -->
-                        <div class="work work-popup-trigger">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-popup-overlay">
-                                <div class="work-popup-content">
-                                    <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                    <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
-                                        <span>Clean &amp; Minimalistic Design</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
-                        <!-- Work -->
-                        <div class="work work-popup-trigger">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-popup-overlay">
-                                <div class="work-popup-content">
-                                    <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                    <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
-                                        <span>Clean &amp; Minimalistic Design</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Work -->
-                    </div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                        <!-- Work -->
-                        <div class="work work-popup-trigger">
-                            <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
-                            </div>
-                            <div class="work-popup-overlay">
-                                <div class="work-popup-content">
-                                    <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                    <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
-                                        <span>Clean &amp; Minimalistic Design</span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                <ul class="list-inline work-popup-tag">
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                    <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="margin-t-10 sm-margin-t-0">
-                                                <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Work -->
-                    </div>
+                    <asp:Repeater ID="repeaterBooks" runat="server">
+                        <ItemTemplate>
+                            <uc1:TempControl runat="server" ID="TempControl" Book='<%#(Container.DataItem as Book) %>' />
+                        </ItemTemplate>
+                    </asp:Repeater>
                 </div>
                 <!-- End Masonry Grid -->
             </div>
