@@ -1,5 +1,4 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="BookControl.ascx.cs" Inherits="Controls_BookControl" %>
-<%@ Register Src="~/Controls/GenreControl.ascx" TagPrefix="uc1" TagName="GenreControl" %>
 
 
 <div class="masonry-grid-item">
@@ -21,29 +20,42 @@
                     </span>
                 </div>
                 <div class="row">
-                    <div class="margin-t-10 sm-margin-t-0">
-                        <%=this.Book.Description %>
-                        <ul class="list-inline work-popup-tag">
-                            <li class="work-popup-tag-item">
-                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[0] %>'>
-                                    <%=this.Book.Genre[0] %>
-                                </a>
-                            </li>
-                            <li class="work-popup-tag-item">
-                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[1] %>'>
-                                    <%=this.Book.Genre[1] %>
-                                </a>
-                            </li>
-                            <li class="work-popup-tag-item">
-                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[2] %>'>
-                                    <%=this.Book.Genre[2] %>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                        <div class="margin-t-10 sm-margin-t-0">
+                            <%=this.Book.Description %>
+                            <ul class="list-inline work-popup-tag">
+                                <li class="work-popup-tag-item">
+                                    <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[0] %>'>
+                                        <%=this.Book.Genre[0] %>
+                                    </a>
+                                </li>
+                                <li class="work-popup-tag-item">
+                                    <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[1] %>'>
+                                        <%=this.Book.Genre[1] %>
+                                    </a>
+                                </li>
+                                <li class="work-popup-tag-item">
+                                    <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[2] %>'>
+                                        <%=this.Book.Genre[2] %>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <%--<div class="col-sm-4">
+                        <div class="margin-t-10 sm-margin-t-0">
+                            <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
+                        </div>
+                    </div>--%>
+                    <div class="col-sm-4">
+                        <div class="margin-t-10 sm-margin-t-0">
+                            <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- End Work -->
+<!-- End Work -->
 </div>
