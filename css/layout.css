@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*----------------------------------------------------------------------
 
 	MASTER STYLESHEET
@@ -1245,7 +1245,9 @@ fieldset[disabled] .btn-theme {
     [Full Width]
 ------------------------------------------------------------------*/
 .full-width {
-  width: 100%;
+  width: 250px;
+  margin-left: 4px;
+  margin-bottom: 4px;
   height: auto;
 }
 

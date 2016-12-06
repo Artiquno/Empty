@@ -31,6 +31,7 @@ html, html a, body {
 
 body {
   font-family: Hind, sans-serif;
+  width: 100px;
 }
 
 p {
@@ -695,7 +696,7 @@ fieldset[disabled] .btn-theme {
 
 .masonry-grid .masonry-grid-item {
   display: block;
-  width: 19.99%;
+  width: 250px;
   float: right;
   vertical-align: top;
   padding: 0 2px;
@@ -703,11 +704,11 @@ fieldset[disabled] .btn-theme {
 }
 
 .masonry-grid .masonry-grid-item.col-12 {
-  width: 100%;
+  width: 10%;
 }
 
 .masonry-grid .masonry-grid-item.col-11 {
-  width: 91.66666667%;
+  width: 10%;
 }
 
 .masonry-grid .masonry-grid-item.col-10 {

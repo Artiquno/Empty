@@ -10,8 +10,8 @@ var Masonry = function() {
         $container.imagesLoaded( function() {
             $container.masonry({
                 itemSelector: '.masonry-grid-item', // use a separate class for itemSelector, other than .col-
-                columnWidth: '.masonry-grid-sizer',
-                percentPosition: true
+                columnWidth: 260
+                //percentPosition: true
             });
         });
 
