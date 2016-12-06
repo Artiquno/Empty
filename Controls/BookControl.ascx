@@ -23,14 +23,23 @@
                 <div class="row">
                     <div class="margin-t-10 sm-margin-t-0">
                         <%=this.Book.Description %>
-                        <%-- ToDo : Genre Repeater
                         <ul class="list-inline work-popup-tag">
-                            <asp:Repeater ID="repeaterGenre" runat="server">
-                                <ItemTemplate>
-                                    <uc1:GenreControl runat="server" ID="GenreControl" Book='<%#(Container.DataItem as Book) %>'/>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </ul> --%>
+                            <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[0] %>'>
+                                    <%=this.Book.Genre[0] %>
+                                </a>
+                            </li>
+                            <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[1] %>'>
+                                    <%=this.Book.Genre[1] %>
+                                </a>
+                            </li>
+                            <li class="work-popup-tag-item">
+                                <a class="work-popup-tag-link" href='/Genres/<%=this.Book.Genre[2] %>'>
+                                    <%=this.Book.Genre[2] %>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
