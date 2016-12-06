@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Controls_TempControl : System.Web.UI.UserControl
+public partial class Controls_BookControl : System.Web.UI.UserControl
 {
     public Book Book { get; set; }
     

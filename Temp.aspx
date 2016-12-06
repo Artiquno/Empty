@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" CodeFile="~/Temp.aspx.cs" AutoEventWireup="true" Inherits="Temp" %>
 
-<%@ Register Src="~/Controls/TempControl.ascx" TagPrefix="uc1" TagName="TempControl" %>
+<%@ Register Src="~/Controls/BookControl.ascx" TagPrefix="uc1" TagName="BookControl" %>
+
 
 
 <!DOCTYPE html>
@@ -254,7 +255,7 @@
                 <div class="masonry-grid row row-space-2">
                     <asp:Repeater ID="repeaterBooks" runat="server">
                         <ItemTemplate>
-                            <uc1:TempControl runat="server" ID="TempControl" Book='<%#(Container.DataItem as Book) %>' />
+                            <uc1:BookControl runat="server" ID="BookControl" Book='<%#(Container.DataItem as Book) %>' />
                         </ItemTemplate>
                     </asp:Repeater>
                 </div>

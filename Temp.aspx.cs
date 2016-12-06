@@ -11,10 +11,6 @@ public partial class Temp : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         List<Book> dataSource = new List<Book>();
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    dataSource.Add("Book" + i.ToString());
-        //}
 
         var path = Server.MapPath("~/img/works");
         var files = Directory.EnumerateFiles(path);
@@ -27,13 +23,15 @@ public partial class Temp : System.Web.UI.Page
 
             string url = vPath + fInfo.Name;
 
+            //Note: Take these from a DB
             dataSource.Add(new Book()
             {
                 AltText = url,
                 Author = url,
                 Description = "DESCRIPTION: " + url,
                 ImageUrl = url,
-                Title = url
+                Title = url,
+                Genre = new List<string>(fInfo.Name.Split('-'))
             });
         }
 
