@@ -16,10 +16,10 @@ public partial class Temp : System.Web.UI.Page
         var files = Directory.EnumerateFiles(path);
         string vPath = "/img/works/";
         
-        foreach(var file in files)
+        for(int i = 0; i < 5; ++i)
         {
 
-            FileInfo fInfo = new FileInfo(file);
+            FileInfo fInfo = new FileInfo(files.ElementAt(i));
 
             string url = vPath + fInfo.Name;
 

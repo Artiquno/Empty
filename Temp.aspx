@@ -60,12 +60,15 @@
                 <div class="collapse navbar-collapse nav-collapse">
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
+                            <li class="js_nav-item nav-item selected"><a class="nav-item-child" href="#"><span class="icon-arrow-right">&nbsp;</span>Home</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a></li>
+                            <%--
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Service</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Pricing</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                            --%>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +86,6 @@
                 <h1 class="promo-block-title">Libraria Online</h1>
                 <p class="promo-block-text">Për të gjithë të apasionuarit e librave</p>
             </div>
-            &nbsp;
         </div>
     </div>
     <!--========== SLIDER ==========-->
@@ -101,15 +103,13 @@
             <!--// end row -->
 
             <div class="row">
-                <div id="work">
-                    <div class="content-md container">
-                        <div class="masonry-grid row row-space-2">
-                            <asp:Repeater ID="repeaterBooks" runat="server">
-                                <ItemTemplate>
-                                    <uc1:BookControl runat="server" ID="BookControl" Book='<%#(Container.DataItem as Book) %>' />
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </div>
+                <div class="content-md container">
+                    <div class="masonry-grid row row-space-2">
+                        <asp:Repeater ID="repeaterBooks" runat="server">
+                            <ItemTemplate>
+                                <uc1:BookControl runat="server" ID="BookControl" Book='<%#(Container.DataItem as Book) %>' />
+                            </ItemTemplate>
+                        </asp:Repeater>
                     </div>
                 </div>
             </div>
@@ -281,7 +281,7 @@
     <div class="content-md container">
         <div class="row">
             <div class="col-sm-9">
-                <h2>Customer Reviews</h2>
+                <h2>Nga klientët tanë</h2>
 
                 <!-- Swiper Testimonials -->
                 <div class="swiper-slider swiper-testimonials">
@@ -290,27 +290,28 @@
                         <div class="swiper-slide">
                             <blockquote class="blockquote">
                                 <div class="margin-b-20">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                   
+                                    Të gjithë librat më të bukur, nga Shakespeare tek Mondi, kjo librari i ka të gjitha!
                                 </div>
-                                <div class="margin-b-20">
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                   
-                                </div>
-                                <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
+                                <p><span class="fweight-700 color-link">Artur Denti</span>, Klient i Librarisë Online</p>
                             </blockquote>
                         </div>
                         <div class="swiper-slide">
                             <blockquote class="blockquote">
                                 <div class="margin-b-20">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                   
+                                    Sa herë që shoh varietetin e librave dhe autorëve në këtë librari, mbetem e mahnitur!
+                                </div>
+                                <p><span class="fweight-700 color-link">Xhevrie Hasani</span>, Kliente e Librarisë Online</p>
+                            </blockquote>
+                        </div>
+                        <div class="swiper-slide">
+                            <blockquote class="blockquote">
+                                <div class="margin-b-20">
+                                    Në momentin kur miqtë më thanë që ekziston një librari online me të gjithë librat më të bukur, unë nuk i besova menjëherë.
                                 </div>
                                 <div class="margin-b-20">
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                   
+                                    Megjithatë e provova, dhe ndihem shumë e lumtur që e bëra këtë, sepse ky është vendi ku shpenzoj kohën më të madhe të ditës.
                                 </div>
-                                <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                <p><span class="fweight-700 color-link">Ford Prefekt</span>, Neglizhues fëmijësh</p>
                             </blockquote>
                         </div>
                     </div>
@@ -326,60 +327,46 @@
     </div>
     <!-- End Testimonials -->
 
-    <!-- Contact -->
     <div id="contact">
-        <!-- Google Map -->
         <div class="gmap">
             <div id="map" class="map height-400"></div>
             <address class="gmap-address">
                 <p class="color-heading margin-b-0">FSHN etj etj etj</p>
             </address>
         </div>
-        <!-- End Google Map -->
     </div>
-    <!-- End Contact -->
     <!--========== END PAGE LAYOUT ==========-->
 
     <!--========== FOOTER ==========-->
     <footer class="footer">
-        <!-- Links -->
         <div class="section-seperator">
             <div class="content-md container">
                 <div class="row">
                     <div class="col-sm-2 sm-margin-b-30">
-                        <!-- List -->
                         <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#">Home</a></li>
-                            <li class="footer-list-item"><a href="#">About</a></li>
-                            <li class="footer-list-item"><a href="#">Work</a></li>
-                            <li class="footer-list-item"><a href="#">Contact</a></li>
+                            <li class="footer-list-item"><a href="#">Kreu</a></li>
+                            <li class="footer-list-item"><a href="/About/">Rreth Nesh</a></li>
+                            <li class="footer-list-item"><a href="/Librat/">Librat</a></li>
+                            <li class="footer-list-item"><a href="/Kontakt/">Kontakt</a></li>
                         </ul>
-                        <!-- End List -->
                     </div>
-                    <div class="col-sm-2 sm-margin-b-30">
-                        <!-- List -->
+                    <div class="col-sm-2">
                         <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#">Twitter</a></li>
-                            <li class="footer-list-item"><a href="#">Facebook</a></li>
-                            <li class="footer-list-item"><a href="#">Instagram</a></li>
-                            <li class="footer-list-item"><a href="#">YouTube</a></li>
-                        </ul>
-                        <!-- End List -->
-                    </div>
-                    <div class="col-sm-3">
-                        <!-- List -->
-                        <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
                             <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
                             <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
                         </ul>
-                        <!-- End List -->
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-30">
+                        <ul class="list-unstyled footer-list list-inline">
+                            <li class="footer-list-item"><a href="http://twitter.com/"><img src="/img/widgets/twitter-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="http://www.facebook.com/"><img src="/img/widgets/fb-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="http://www.instagram.com/"><img src="/img/widgets/ig-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="/rss"><img src="/img/widgets/rss-icon.png" alt="" /></a></li>
+                        </ul>
                     </div>
                 </div>
-                <!--// end row -->
             </div>
         </div>
-        <!-- End Links -->
     </footer>
     <!--========== END FOOTER ==========-->
 
@@ -412,5 +399,4 @@
     <script src="/js/components/gmap.js" type="text/javascript"></script>
 
 </body>
-<!-- END BODY -->
 </html>
