@@ -1,28 +1,5 @@
 ﻿@charset "UTF-8";
-/*----------------------------------------------------------------------
 
-	MASTER STYLESHEET
-
-	Project:        Metronic "Acidus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-	Version:        1.0
-	Author:         KeenThemes
-	Primary use:    Corporate, Business Themes.
-	Email:			support@keenthemes.com
-	Follow: 		http://www.twitter.com/keenthemes
-	Like: 			http://www.facebook.com/keenthemes
-	Website:		http://www.keenthemes.com
-	Premium:		Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
------------------------------------------------------------------------*/
-/* eg: @include user-select(none); */
-/* eg: @include rotate(45deg); */
-/* eg: @include translate3d(0,0,0); */
-/* eg: @include border-radius(3px); */
-/* eg: @include visibility-backface(hidden); */
-/*------------------------------------------------------------------
-  	[The "base.scss" contains basic default element styles
-  		(colors, typography, margins & padding).]
-------------------------------------------------------------------*/
 html {
   overflow-x: hidden;
 }
@@ -357,7 +334,7 @@ fieldset[disabled] .btn-theme {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/1920x1080/02.jpg) no-repeat;
+  background: url(../img/backgrounds/book-and-watch.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -393,7 +370,7 @@ fieldset[disabled] .btn-theme {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/1920x1080/01.jpg) no-repeat;
+  background: url(../img/backgrounds/book-in-library.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 250px 0 200px;
@@ -1558,4 +1535,11 @@ fieldset[disabled] .btn-theme {
 
 .height-500 {
   height: 500px !important;
+}
+
+.books-most-read {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    width: 250px;
+    height: 350px;
 }
