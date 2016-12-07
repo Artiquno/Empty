@@ -9,6 +9,6 @@ public partial class Demos_CodeBehind : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        Label1.Text = "Hello World! The time is, " + DateTime.Now.ToString();
     }
 }
