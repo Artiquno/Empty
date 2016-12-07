@@ -2,15 +2,13 @@
 
 <%@ Register Src="~/Controls/BookControl.ascx" TagPrefix="uc1" TagName="BookControl" %>
 
-
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
     <meta charset="utf-8" />
     <title>Home | Libraria</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
     <meta content="" name="author" />

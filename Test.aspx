@@ -5,8 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link rel="stylesheet" href="/css/temp.css" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
+        .some-style {
             color: #FF0000;
         }
     </style>
@@ -17,7 +18,7 @@
     
         <h1>hOI!!!!! weLcOM tO planET tEM!!!!!</h1>
         <p>
-            tEm reAL haPY YOu viSIt<span class="auto-style1"> tEM ShoP</span>!!!!!
+            tEm reAL haPY YOu viSIt<span class="some-style"> tEM ShoP</span>!!!!!
         </p>
         <p>
             tEm ALsO hAve<strong> wEBS SiTEs</strong>!! tEM saYS visiTS <a href="http://www.tEMsiTE.tem">www.tEMsiTE.tem</a> ya ya!!!!!</p>
