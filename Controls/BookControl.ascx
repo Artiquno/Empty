@@ -4,8 +4,9 @@
 <div class="masonry-grid-item">
     <!-- Work -->
     <div class="work work-popup-trigger">
-        <div class="work-overlay">
+        <div class="work-overlay books-most-read col-md-8">
             <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
+            <p><%=this.Book.Title %></p>
             <%--<asp:Image ID="imgMain" runat="server" CssClass="full-width img-responsive" />--%>
         </div>
         <div class="work-popup-overlay">
