@@ -14,12 +14,12 @@
     <meta content="" name="author" />
 
     <!-- GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css" />
     <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <!-- PAGE LEVEL PLUGIN STYLES -->
-    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet" />
     <link href="/vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css" />
     <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
@@ -47,8 +47,8 @@
                     <!-- Logo -->
                     <div class="logo">
                         <a class="logo-wrap" href="#body">
-                            <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo">
-                            <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo">
+                            <img class="logo-img logo-img-main" src="img/logo.png" alt="Asentus Logo" />
+                            <img class="logo-img logo-img-active" src="img/logo-dark.png" alt="Asentus Logo" />
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -59,11 +59,14 @@
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
                             <li class="js_nav-item nav-item selected"><a class="nav-item-child" href="#"><span class="icon-arrow-right">&nbsp;</span>Home</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a></li>
-                            <%--
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Service</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                            --%>
+                            <li class="js_nav-item nav-item">
+                                <a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a>
+                                <ul class="navbar fallback">
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/Fantazi/">Fantazi</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/SciFi/">Sci-Fi</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/Komedi/">Komedi</a></li>
+                                </ul>
+                            </li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
@@ -115,165 +118,14 @@
     </div>
     <!-- End Products -->
 
-    <!-- Service -->
-    <div id="service">
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-                <div class="row row-space-2 margin-b-4">
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-chemistry"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Art Of Coding</h3>
-                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <div class="service bg-color-base wow fadeInDown" data-height="height" data-wow-duration=".3" data-wow-delay=".1s">
-                            <div class="service-element">
-                                <i class="service-icon color-white icon-screen-tablet"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3 class="color-white">Responsive Design</h3>
-                                <p class="color-white margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-badge"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Feature Reach</h3>
-                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-
-                <div class="row row-space-2">
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-notebook"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Useful Documentation</h3>
-                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-speedometer"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Fast Delivery</h3>
-                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="service" data-height="height">
-                            <div class="service-element">
-                                <i class="service-icon icon-badge"></i>
-                            </div>
-                            <div class="service-info">
-                                <h3>Free Plugins</h3>
-                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <a href="#" class="content-wrapper-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-    </div>
-    <!-- End Service -->
-
     <!-- Promo Banner -->
     <div class="promo-banner">
         <div class="container-sm content-lg">
-            <h2 class="promo-banner-title">Displaying the Result</h2>
-            <p class="promo-banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <h2 class="promo-banner-title">Shisni librat tuaj të vjetër</h2>
+            <p class="promo-banner-text">Nëse keni një libër të vjetër për të shitur, na kontaktoni <a href="/Kontakt/">këtu</a>.</p>
         </div>
     </div>
     <!-- End Promo Banner -->
-
-    <!-- Pricing -->
-    <div id="pricing">
-        <div class="bg-color-sky-light">
-            <div class="content-lg container">
-                <div class="row row-space-2">
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <!-- Pricing -->
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Starter Kit <span>- $</span> 49</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Basic Features</li>
-                                <li class="pricing-list-item">Up to 5 products</li>
-                                <li class="pricing-list-item">50 Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-4">
-                        <!-- Pricing -->
-                        <div class="pricing pricing-active">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-badge"></i>
-                                <h3>Professional <span>- $</span> 149</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Basic Features</li>
-                                <li class="pricing-list-item">Up to 100 products</li>
-                                <li class="pricing-list-item">100 Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4">
-                        <!-- Pricing -->
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-shield"></i>
-                                <h3>Advanced <span>- $</span> 249</h3>
-                                <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Extended Features</li>
-                                <li class="pricing-list-item">Unlimited products</li>
-                                <li class="pricing-list-item">Unlimited Users Panels</li>
-                            </ul>
-                            <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-    </div>
-    <!-- End Pricing -->
 
     <!-- Testimonials -->
     <div class="content-md container">
@@ -340,7 +192,7 @@
         <div class="gmap">
             <div id="map" class="map height-400"></div>
             <address class="gmap-address">
-                <p class="color-heading margin-b-0">FSHN etj etj etj</p>
+                <p class="color-heading margin-b-0">Faculteti i Shkencave të Natyrës</p>
             </address>
         </div>
     </div>
@@ -397,7 +249,7 @@
     <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
     <script src="/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
     <script src="/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
 
     <!-- PAGE LEVEL SCRIPTS -->
     <script src="/js/layout.js" type="text/javascript"></script>
@@ -407,5 +259,7 @@
     <script src="/js/components/masonry.js" type="text/javascript"></script>
     <script src="/js/components/gmap.js" type="text/javascript"></script>
 
+    <!-- Dropdown script for nav bar -->
+    <script src="js/nav-dropdown.js"></script>
 </body>
 </html>
