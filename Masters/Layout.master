@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Layout.master.cs" Inherits="Masters_Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- THEME STYLES -->
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- CORE PLUGINS -->
+    <script src="/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="/vendor/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+</head>
+<body id="body" class="page-on-scroll">
+    <!--========== HEADER ==========-->
+    <header class="header navbar-fixed-top">
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container js_nav-item">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a class="logo-wrap" href="#body">
+                            <img class="logo-img logo-img-main" src="/img/logo.png" alt="Asentus Logo" />
+                            <img class="logo-img logo-img-active" src="/img/logo-dark.png" alt="Asentus Logo" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav navbar-nav-right">
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Default.aspx">Home</a></li>
+                            <li class="js_nav-item nav-item">
+                                <a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a>
+                                <ul class="navbar fallback">
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/Fantazi/">Fantazi</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/SciFi/">Sci-Fi</a></li>
+                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Genre/Komedi/">Komedi</a></li>
+                                </ul>
+                            </li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+        </nav>
+    </header>
+    <!--========== END HEADER ==========--> 
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        <!--=============== Content Placeholder ==================-->
+    </asp:ContentPlaceHolder>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+        <div class="section-seperator">
+            <div class="content-md container">
+                <div class="row">
+                    <div class="col-sm-2 sm-margin-b-30">
+                        <ul class="list-unstyled footer-list">
+                            <li class="footer-list-item"><a href="#">Kreu</a></li>
+                            <li class="footer-list-item"><a href="/About/">Rreth Nesh</a></li>
+                            <li class="footer-list-item"><a href="/Librat/">Librat</a></li>
+                            <li class="footer-list-item"><a href="/Kontakt/">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled footer-list">
+                            <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
+                            <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-30">
+                        <ul class="list-unstyled footer-list list-inline">
+                            <li class="footer-list-item"><a href="http://twitter.com/"><img src="/img/widgets/twitter-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="http://www.facebook.com/"><img src="/img/widgets/fb-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="http://www.instagram.com/"><img src="/img/widgets/ig-icon.png" alt="" /></a></li>
+                            <li class="footer-list-item"><a href="/rss"><img src="/img/widgets/rss-icon.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+
+    <!-- Back To Top -->
+    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+    <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+    <!-- PAGE LEVEL PLUGINS -->
+    <script src="/vendor/jquery.easing.js" type="text/javascript"></script>
+    <script src="/vendor/jquery.back-to-top.js" type="text/javascript"></script>
+    <script src="/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
+    <script src="/vendor/jquery.wow.min.js" type="text/javascript"></script>
+    <script src="/vendor/swiper/js/swiper.jquery.js" type="text/javascript"></script>
+    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
+
+    <!-- PAGE LEVEL SCRIPTS -->
+    
+    <script src="/js/components/wow.js" type="text/javascript"></script>
+    <script src="/js/components/swiper.js" type="text/javascript"></script>
+    <script src="/js/components/magnific-popup.js" type="text/javascript"></script>
+    <script src="/js/components/masonry.js" type="text/javascript"></script>
+    <script src="/js/components/gmap.js" type="text/javascript"></script>
+
+    <!-- Dropdown script for nav bar -->
+    <script src="/js/nav-dropdown.js"></script>
+</body>
+</html>
