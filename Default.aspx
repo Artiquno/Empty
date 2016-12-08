@@ -34,7 +34,6 @@
 
     <!--========== HEADER ==========-->
     <header class="header navbar-fixed-top">
-        <!-- Navbar -->
         <nav class="navbar" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -76,7 +75,6 @@
                 <!-- End Navbar Collapse -->
             </div>
         </nav>
-        <!-- Navbar -->
     </header>
     <!--========== END HEADER ==========-->
 
@@ -192,7 +190,7 @@
         <div class="gmap">
             <div id="map" class="map height-400"></div>
             <address class="gmap-address">
-                <p class="color-heading margin-b-0">Faculteti i Shkencave të Natyrës</p>
+                <p class="color-heading margin-b-0">Faculteti i Shkencave të Natyrës, Tiranë, Shqipëri</p>
             </address>
         </div>
     </div>

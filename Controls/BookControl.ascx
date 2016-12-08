@@ -21,7 +21,7 @@
                     </span>
                 </div>
                 <div class="row">
-                    <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                    <div class="col-sm-8 sm-margin-b-20">
                         <div class="margin-t-10 sm-margin-t-0">
                             <%=this.Book.Description %>
                             <ul class="list-inline work-popup-tag">
