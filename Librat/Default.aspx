@@ -1,21 +1,10 @@
 ﻿<%@ Page Title="Librat | Libraria" Language="C#" MasterPageFile="~/Masters/Layout.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Librat_Default" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="head">
-
-    <link href="/css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="/vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css" />
-    <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-
-    <style>
-        .promo-block {
-            padding: 80px 0 70px;
-        }
-    </style>
-
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    <div style="margin-top:100px" class="row">
+    <div style="margin-top:100px" class="row"> <!--Note: Fix the style! -->
         <div class="container-sm content-lg">
             <h2 class="test icon">Lorem ipsum dolor sit amet</h2>
             <p>
