@@ -104,7 +104,7 @@
                                     Nuk mendoj se kam parë ndonjëherë një koleksion kaq të gjerë librash në të gjithë jetën time.
                                 </div>
                                 <div class="margin-b-20">
-                                    Mendoj se dhe murgjit e Kaleth do ta kishin zili!
+                                    Mendoj se dhe në Minas Tirith do ta kishin zili!
                                 </div>
                                 <p><span class="fweight-700 color-link">Arwen Undómiel</span>, Kliente e Librarisë Online</p>
                             </blockquote>

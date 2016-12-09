@@ -7,9 +7,8 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form runat="server">
     <div>
-    
         <asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem Value="GoldenFlower">Golden Flower</asp:ListItem>
             <asp:ListItem Value="Typha">Typha Plant</asp:ListItem>
@@ -25,10 +24,9 @@
         </asp:CheckBoxList>
     
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-&nbsp;<br />
+        <br />
         <br />
         <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-    
     </div>
     </form>
 </body>
