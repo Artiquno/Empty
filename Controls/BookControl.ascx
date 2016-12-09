@@ -7,7 +7,6 @@
         <div class="work-overlay books-most-read col-md-8">
             <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
             <p><%=this.Book.Title %></p>
-            <%--<asp:Image ID="imgMain" runat="server" CssClass="full-width img-responsive" />--%>
         </div>
         <div class="work-popup-overlay">
             <div class="work-popup-content">
@@ -43,11 +42,6 @@
                             </ul>
                         </div>
                     </div>
-                    <%--<div class="col-sm-4">
-                        <div class="margin-t-10 sm-margin-t-0">
-                            <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
-                        </div>
-                    </div>--%>
                     <div class="col-sm-4">
                         <div class="margin-t-10 sm-margin-t-0">
                             <img class="full-width img-responsive" src='<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
