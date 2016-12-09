@@ -12,9 +12,10 @@
                 </div>
                 <div>
                     <asp:Label runat="server" Text=" Password: " />
-                    <asp:TextBox runat="server" ID="Pass" />
+                    <asp:TextBox runat="server" ID="Pass" TextMode="Password" />
                 </div>
-                <asp:Button runat="server" Text="Log In" UseSubmitBehavior="true" />
+                <asp:Button runat="server" Text="Log In" UseSubmitBehavior="true" ID="Submit" OnClick="Submit_Click" />
+                <asp:Label runat="server" Text="<br />" ID="Snitch" />
             </form>
         </div>
     </div>

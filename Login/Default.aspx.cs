@@ -11,4 +11,10 @@ public partial class Login_Default : System.Web.UI.Page
     {
 
     }
+
+    protected void Submit_Click(object sender, EventArgs e)
+    {
+        Snitch.Text += "Hello " + Name.Text + "!<br />";
+        Snitch.Text += "<em>*Shouts*</em> YOUR PASSWORD IS " + Pass.Text + ". DON'T WORRY! IT'S A SECRET!";
+    }
 }
