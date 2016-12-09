@@ -1,37 +1,46 @@
-# Empty
+# Libraria Online
+Një librari online për të lexuar libra. Site i shkruar në **ASP.NET** Web Forms.
 
-Just an empty ASP.NET Web Forms site, mostly for learning. Feel free to break it, it's not like i have anything better to do...  
-*whispers curses*
+# Si të klonosh në VS Git Plugin
 
-# How to clone in VS Git extension
+1. Hap Visual Studio.
+2. Në panelin në të djathtë, hap 'Team Explorer'.
+3. Tek 'Local Git Repositories' *kliko* 'Clone &#9662;'.
+4. Në fushën e URL (e para) shkruaj https://github.com/Artiquno/Empty.git .
+5. Në fushën e Path (e dyta) shkruaj direktorinë ku do që të shkarkohet projekti *(p.sh C:\EmptyFolder\ )* ose *kliko* butonin&nbsp;'**...**' në të djathtë për të hapur file explorer. Duhet të zgjedhësh një folder bosh.
+6. *Kliko* 'Clone'.
+7. U klonua! Tani *File -> Open Site...* dhe hap folderin që zgjodhe më sipër.
 
-1. Run Visual Studio
-2. In the panel on the right, open Team Explorer
-3. Under GitHub select 'Clone'
-4. In the URL field (the first) enter https://github.com/Artiquno/Empty.git
-5. In the Path field (the second) enter the path where you want the files to be saved. Make sure you select an empty folder.
-6. Click Clone
-7. Done! Now select File -> Open Site... and open the folder you selected in the path field.
+# Si të bësh ndryshime
 
-# How to make changes
+## Commit
+### Ruaj ndryshimet e bëra
 
-### Committing changes
+1. Hap një file nga projekti. *(p.sh README.md)*
+2. Bëj një ose më shumë ndryshime *(p.sh shto një përshëndetje)* dhe bëje save.
+3. Hap 'Team Explorer' në panelin në të djathtë.
+4. *Kliko* 'Changes'.
+5. Shto file që ke ndryshuar duke klikuar butonin '**+**' për të shtuar të gjithë file e ndryshuar (ose duke përzgjedhur file individuale me *Ctrl+Click*, *kliko* me të djathtën, dhe *kliko* 'Stage').
+6. Shkruaj një përmbledhje të shkurtër të ndryshimeve tek fusha e mësipërme.
+7. *Kliko* 'Commit'
 
-1. Open a file from the project (README.md)
-2. Make some changes to the file (add a hello message) and save it
-3. Open the Team Explorer tab in the right panel
-4. Select 'Changes'
-5. Add the files you want to commit by clicking the **+** button to add all the changed files, or by *Ctrl+Click*ing the individual files, *RightClick*ing, and *Click*ing 'Stage'
-6. Add a commit message on the text field above
-7. Click 'Commit'
+## Push
+### Hidhi ndryshimet në server
 
-### Pushing changes to server
+1. Pasi ke bërë commit, *kliko* butonin **Home** në krye të 'Team Explorer'.
+2. *Kliko* 'Sync'
+3. *Kliko* 'Push'
 
-1. After committing, *Click* the **Home** button on the top
-2. *Click* 'Sync'
-3. *Click* 'Push'
+## Pull
+### Tërhiq ndryshimet nga serveri
 
-### Pulling changes from server
-
-1. In the Git **Home** tab click 'Sync'
-2. Click 'Pull'
+1. Tek **Home** *kliko* 'Sync'
+2. *Kliko* 'Pull'
+3. Nëse të thotë 'Conflicts' do të thotë që një ose më shumë file janë ndryshuar dhe në server dhe nga ti.
+    1. *Kliko* 'Resolve Conflicts'.
+    2. Tek file që ka konflikt *kliko* 'Merge'.
+    3. Do të hapen në Visual Studio dy file që tregojnë ndryshimet që janë bërë nga ti dhe në server. Jeshile janë shtime, të kuqe janë heqje.
+    4. *Kliko* një ose të dy checkbox për të zgjedhur kush ndryshim do të ruhet. Poshtë shfaqet file përfundimtar, mund ta ndryshosh nëse duhet.
+    5. Kur të kesh mbaruar, në cepin e majtë-sipër të faqeve me ndryshime *kliko* 'Accept Merge'.
+    6. Përsërit për të gjithë file që kanë konflikte.
+    7. Përfundo duke bërë Commit dhe Push.
