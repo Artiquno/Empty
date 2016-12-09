@@ -6,12 +6,14 @@
     <div class="row" style="margin-top: 100px"> <!--Note: Fix the style! -->
         <div class="container-sm container-lg">
             <form runat="server" action="Default.aspx" method="post">
-                <asp:Label runat="server" Text="Name: " />
-                <asp:TextBox runat="server" ID="Name" /><br />
-
-                <asp:Label runat="server" Text=" Password: " />
-                <asp:TextBox runat="server" ID="Pass" /><br />
-
+                <div class="text-input">
+                    <asp:Label runat="server" Text="Name: " />
+                    <asp:TextBox runat="server" ID="Name" />
+                </div>
+                <div>
+                    <asp:Label runat="server" Text=" Password: " />
+                    <asp:TextBox runat="server" ID="Pass" />
+                </div>
                 <asp:Button runat="server" Text="Log In" UseSubmitBehavior="true" />
             </form>
         </div>
