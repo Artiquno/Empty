@@ -1,6 +1,12 @@
 # Libraria Online
 Nj&#235; librari online p&#235;r t&#235; lexuar libra. Site i shkruar n&#235; **ASP.NET** Web Forms.
 
+1. [git clone](#si-të-klonosh-në-vs-git-plugin)
+2. Marrja dhe d&#235;rgimi i ndryshimeve
+    1. [git commit](#commit)
+    2. [git push](#push)
+    3. [git pull](#pull)
+
 # Si t&#235; klonosh n&#235; VS Git Plugin
 
 1. Hap Visual Studio.
