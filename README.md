@@ -12,6 +12,11 @@ Just an empty ASP.NET Web Forms site, mostly for learning. Feel free to break it
 5. In the Path field (the second) enter the path where you want the files to be saved. Make sure you select an empty folder.
 6. Click Clone
 7. Done! Now select File -> Open Site... and open the folder you selected in the path field.
+8. *Kliko* butonin **Home** në krye të Team Explorer
+9. Hap 'Settings', dhe pastaj 'Global Settings'
+10. Tek 'User Name' vendos username që ke në Git
+11. Tek 'Email Address' vendos email tënd
+12. *Kliko* 'Update'
 
 # How to make changes
 
