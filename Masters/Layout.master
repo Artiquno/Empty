@@ -81,10 +81,10 @@
                 <!-- Search Bar -->
                 <form action="/Librat/" method="get" class="col-lg-6 margin-t-20">
                     <div class="search-bar col-lg-10" style="position: relative; float: left; padding: 0;">
-                        <input class="form-control" type="text" placeholder="Kërko libër" name="q" style="background-color: #f6f6f6;" />
+                        <input class="form-control" type="text" placeholder="Kërko libër" name="q" style="background-color: #f6f6f6; border-bottom-right-radius: 0; border-top-right-radius: 0;" />
                     </div>
-                    <div class="margin-l-5" style="position: relative; float: left;">
-                        <button type="submit" class="form-control btn btn-default" id="search">Search</button>
+                    <div style="position: relative; float: left;">
+                        <button type="submit" class="form-control btn btn-default" style="border-bottom-left-radius: 0; border-top-left-radius: 0;" id="search">Search</button>
                     </div>
                 </form>
 
@@ -114,7 +114,7 @@
     <!--========== END HEADER ==========-->
 
     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <!--=============== Content Placeholder ==================-->
+            
     </asp:ContentPlaceHolder>
 
     <!--========== FOOTER ==========-->
