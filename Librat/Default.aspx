@@ -4,12 +4,9 @@
 
 
 <asp:Content runat="server" ContentPlaceHolderID="head">
-    <link href="/css/animate.css" rel="stylesheet" />
-    <link href="/vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css" />
     <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
     <script src="/js/work-popup.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
