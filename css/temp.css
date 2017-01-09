@@ -3,5 +3,22 @@
 }
 
 .random-class {
-	color: red;
+    color: red;
+}
+
+.label {
+    margin: 2px 5px;
+    padding: 2px;
+    width: 170px;
+    display: inline-block;
+}
+
+.input-small {
+    margin: 5px 0px;
+}
+
+.validation {
+    color: red;
+    font-style: italic;
+    margin-left: 5px;
 }
