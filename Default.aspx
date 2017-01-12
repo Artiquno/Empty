@@ -14,6 +14,10 @@
 
 </asp:Content>
 
+<asp:Content runat="server" ContentPlaceHolderID="Spacer">
+
+</asp:Content>
+
 <%-- Body --%>
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <div class="promo-block">

@@ -4,7 +4,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <div class="row" style="margin-top: 100px"> <!--Note: Fix the style! -->
+    <div class="row"> 
         <div class="container-sm container-lg">
             <form runat="server" action="Default.aspx" method="post">
                 <asp:Login ID="UserLogin" runat="server"></asp:Login>

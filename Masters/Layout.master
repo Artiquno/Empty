@@ -112,11 +112,13 @@
         </nav>
     </header>
     <!--========== END HEADER ==========-->
-
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <div style="margin-top: 100px; margin-bottom: 100px" class="row">
+    <asp:ContentPlaceHolder runat="server" ID="Spacer">
+        <div style="margin-top: 100px;" class="row">
 
         </div>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
     </asp:ContentPlaceHolder>
 
     <!--========== FOOTER ==========-->

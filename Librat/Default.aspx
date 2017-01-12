@@ -10,8 +10,8 @@
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    <!--Note: Fix the style! -->
-    <div style="margin-top: 100px" class="row">
+    
+    <div class="row">
         <div class="container content-lg">
             <div class="row">
                 <div class="content-md container">
