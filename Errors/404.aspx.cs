@@ -9,6 +9,8 @@ public partial class Errors_404 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Response.Status = "404 Not Found";
+        Response.StatusCode = 404;
+        Response.TrySkipIisCustomErrors = true;
     }
 }
