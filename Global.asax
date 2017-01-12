@@ -1,6 +1,7 @@
 ﻿<%@ Application Language="C#" %>
+<%@ Import Namespace="System.Net.Mail" %>
 
-<script runat="server">
+<script RunAt="server">
 
     void Application_Start(object sender, EventArgs e)
     {
@@ -26,7 +27,26 @@
 
     void Application_Error(object sender, EventArgs e)
     {
-        // Code that runs when an unhandled error occurs
+        if(HttpContext.Current.Server.GetLastError() != null)
+        {
+            Exception ex = HttpContext.Current.Server.GetLastError().GetBaseException();
+
+            string mailSubject = "Error in page " + Request.Url.ToString();
+            string message = string.Empty;
+            message += "<strong>Message</strong><br />" + ex.Message + "<br />";
+            message += "<strong>Stack Trace</strong><br />" + ex.StackTrace + "<br />";
+            message += "<strong>Query String</strong><br />" + Request.QueryString.ToString() + "<br /><br />";
+
+            MailMessage mail = new MailMessage(
+                "libraria_error_log@hotmail.com",
+                "endri-kurushi@hotmail.com");
+            mail.Subject = mailSubject;
+            mail.Body = message;
+            mail.IsBodyHtml = true;
+
+            SmtpClient smtp = new SmtpClient();
+            smtp.Send(mail);
+        }
     }
 
     void Session_Start(object sender, EventArgs e)
