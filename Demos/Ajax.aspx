@@ -3,7 +3,7 @@
 
 <asp:Content ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form runat="server" style="margin-top: 150px;">
-        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:ScriptManagerProxy runat="server"></asp:ScriptManagerProxy>
         <asp:UpdatePanel runat="server" ID="Panel">
             <ContentTemplate>
                 <asp:Timer runat="server" Interval="1000" OnTick="Timer_Tick">

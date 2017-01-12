@@ -9,9 +9,6 @@
     <link href="/vendor/swiper/css/swiper.css" rel="stylesheet" type="text/css" />
     <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
-    <script src="/js/layout.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
-
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="Spacer">
@@ -20,6 +17,13 @@
 
 <%-- Body --%>
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <asp:ScriptManagerProxy runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/js/components/gmap.js" />
+            <asp:ScriptReference Path="~/js/layout.js" />
+            
+        </Scripts>
+    </asp:ScriptManagerProxy>
     <div class="promo-block">
         <div class="container">
             <div class="margin-b-40">
@@ -135,4 +139,5 @@
         </div>
     </div>
     <!--========== END PAGE LAYOUT ==========-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
 </asp:Content>

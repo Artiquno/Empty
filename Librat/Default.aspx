@@ -5,12 +5,14 @@
 
 <asp:Content runat="server" ContentPlaceHolderID="head">
     <link href="/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-
-    <script src="/js/work-popup.js" type="text/javascript"></script>
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
-    
+    <asp:ScriptManagerProxy runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="/js/work-popup.js" />
+        </Scripts>
+    </asp:ScriptManagerProxy>
     <div class="row">
         <div class="container content-lg">
             <div class="row">

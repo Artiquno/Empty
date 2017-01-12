@@ -23,143 +23,141 @@
     <!-- THEME STYLES -->
     <link href="/css/layout.css" rel="stylesheet" type="text/css" />
 
-    <!-- CORE PLUGINS -->
-    <script src="/vendor/jquery.min.js" type="text/javascript"></script>
-    <script src="/vendor/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-    <!-- PAGE LEVEL PLUGINS -->
-    <script src="/vendor/jquery.easing.js" type="text/javascript"></script>
-    <script src="/vendor/jquery.back-to-top.js" type="text/javascript"></script>
-    <script src="/vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-    <script src="/vendor/jquery.wow.min.js" type="text/javascript"></script>
-    <script src="/vendor/swiper/js/swiper.jquery.js" type="text/javascript"></script>
-    <script src="/vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
-    <script src="/vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-    <script src="/vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-
-    <!-- PAGE LEVEL SCRIPTS -->
-
-    <script src="/js/components/wow.js" type="text/javascript"></script>
-    <script src="/js/components/swiper.js" type="text/javascript"></script>
-    <script src="/js/components/magnific-popup.js" type="text/javascript"></script>
-    <script src="/js/components/masonry.js" type="text/javascript"></script>
-    <script src="/js/components/gmap.js" type="text/javascript"></script>
-
-    <!-- Dropdown script for nav bar -->
-    <script src="/js/nav-dropdown.js"></script>
-
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon.ico" />
 
 </head>
 <body id="body" class="page-on-scroll">
-    <!--========== HEADER ==========-->
-    <header class="header navbar-fixed-top">
-        <nav class="navbar" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="menu-container js_nav-item">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="toggle-icon"></span>
-                    </button>
+    <form runat="server">
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container js_nav-item">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
 
-                    <!-- Logo -->
-                    <div class="logo">
-                        <a class="logo-wrap" href="/">
-                            <img class="logo-img logo-img-main" src="/img/logo.png" alt="Asentus Logo" />
-                            <img class="logo-img logo-img-active" src="/img/logo-dark.png" alt="Asentus Logo" />
-                        </a>
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="/">
+                                <img class="logo-img logo-img-main" src="/img/logo.png" alt="Asentus Logo" />
+                                <img class="logo-img logo-img-active" src="/img/logo-dark.png" alt="Asentus Logo" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
                     </div>
-                    <!-- End Logo -->
+
+                    <!-- Search Bar -->
+                    <div class="col-lg-6 margin-t-20">
+                        <div class="search-bar col-lg-10" style="position: relative; float: left; padding: 0;">
+                            <input class="form-control" type="text" placeholder="Kërko libër" name="q" style="background-color: #f6f6f6; border-bottom-right-radius: 0; border-top-right-radius: 0;" />
+                        </div>
+                        <div style="position: relative; float: left;">
+                            <button type="submit" class="form-control btn btn-default" style="border-bottom-left-radius: 0; border-top-left-radius: 0;" id="search">Search</button>
+                        </div>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="nav navbar-nav navbar-nav-right">
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/">Home</a></li>
+                                <li class="js_nav-item nav-item">
+                                    <a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a>
+                                    <ul class="navbar fallback">
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=fantazi">Fantazi</a></li>
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=scifi">Sci-Fi</a></li>
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=komedi">Komedi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
                 </div>
+            </nav>
+        </header>
+        <!--========== END HEADER ==========-->
+        <asp:ScriptManager runat="server" ID="ScrMan">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Path="~/vendor/jquery-migrate.min.js" />
 
-                <!-- Search Bar -->
-                <form action="/Librat/" method="get" class="col-lg-6 margin-t-20">
-                    <div class="search-bar col-lg-10" style="position: relative; float: left; padding: 0;">
-                        <input class="form-control" type="text" placeholder="Kërko libër" name="q" style="background-color: #f6f6f6; border-bottom-right-radius: 0; border-top-right-radius: 0;" />
-                    </div>
-                    <div style="position: relative; float: left;">
-                        <button type="submit" class="form-control btn btn-default" style="border-bottom-left-radius: 0; border-top-left-radius: 0;" id="search">Search</button>
-                    </div>
-                </form>
+                <asp:ScriptReference Path="~/vendor/jquery.easing.js" />
+                <asp:ScriptReference Path="~/vendor/jquery.back-to-top.js" />
+                <asp:ScriptReference Path="~/vendor/jquery.smooth-scroll.js" />
+                <asp:ScriptReference Path="~/vendor/jquery.wow.min.js" />
+                <asp:ScriptReference Path="~/vendor/swiper/js/swiper.jquery.js" />
+                <asp:ScriptReference Path="~/vendor/magnific-popup/jquery.magnific-popup.min.js" />
+                <asp:ScriptReference Path="~/vendor/masonry/jquery.masonry.pkgd.min.js" />
+                <asp:ScriptReference Path="~/vendor/masonry/imagesloaded.pkgd.min.js" />
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse nav-collapse">
-                    <div class="menu-container">
-                        <ul class="nav navbar-nav navbar-nav-right">
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/">Home</a></li>
-                            <li class="js_nav-item nav-item">
-                                <a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a>
-                                <ul class="navbar fallback">
-                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=fantazi">Fantazi</a></li>
-                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=scifi">Sci-Fi</a></li>
-                                    <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=komedi">Komedi</a></li>
-                                </ul>
-                            </li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Navbar Collapse -->
+                <asp:ScriptReference Path="~/js/components/wow.js" />
+                <asp:ScriptReference Path="~/js/components/swiper.js" />
+                <asp:ScriptReference Path="~/js/components/magnific-popup.js" />
+                <asp:ScriptReference Path="~/js/components/masonry.js" />
+
+                <asp:ScriptReference Path="~/js/nav-dropdown.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <asp:ContentPlaceHolder runat="server" ID="Spacer">
+            <div style="margin-top: 100px;" class="row">
+
             </div>
-        </nav>
-    </header>
-    <!--========== END HEADER ==========-->
-    <asp:ContentPlaceHolder runat="server" ID="Spacer">
-        <div style="margin-top: 100px;" class="row">
-
-        </div>
-    </asp:ContentPlaceHolder>
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-    </asp:ContentPlaceHolder>
+        </asp:ContentPlaceHolder>
 
-    <!--========== FOOTER ==========-->
-    <footer class="footer">
-        <div class="section-seperator">
-            <div class="content-md container">
-                <div class="row">
-                    <div class="col-sm-2 sm-margin-b-30">
-                        <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="/">Kreu</a></li>
-                            <li class="footer-list-item"><a href="/About/">Rreth Nesh</a></li>
-                            <li class="footer-list-item"><a href="/Librat/">Librat</a></li>
-                            <li class="footer-list-item"><a href="/Kontakt/">Kontakt</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <ul class="list-unstyled footer-list">
-                            <li class="footer-list-item"><a href="/Legal/Privacy/">Privacy Policy</a></li>
-                            <li class="footer-list-item"><a href="/Legal/Terms/">Terms &amp; Conditions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-30">
-                        <ul class="list-unstyled footer-list list-inline">
-                            <li class="footer-list-item"><a href="http://twitter.com/">
-                                <img src="/img/widgets/twitter-icon.png" alt="" /></a></li>
-                            <li class="footer-list-item"><a href="http://www.facebook.com/">
-                                <img src="/img/widgets/fb-icon.png" alt="" /></a></li>
-                            <li class="footer-list-item"><a href="http://www.instagram.com/">
-                                <img src="/img/widgets/ig-icon.png" alt="" /></a></li>
-                            <li class="footer-list-item"><a href="/rss">
-                                <img src="/img/widgets/rss-icon.png" alt="" /></a></li>
-                        </ul>
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <div class="section-seperator">
+                <div class="content-md container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-30">
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="/">Kreu</a></li>
+                                <li class="footer-list-item"><a href="/About/">Rreth Nesh</a></li>
+                                <li class="footer-list-item"><a href="/Librat/">Librat</a></li>
+                                <li class="footer-list-item"><a href="/Kontakt/">Kontakt</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a href="/Legal/Privacy/">Privacy Policy</a></li>
+                                <li class="footer-list-item"><a href="/Legal/Terms/">Terms &amp; Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-30">
+                            <ul class="list-unstyled footer-list list-inline">
+                                <li class="footer-list-item"><a href="http://twitter.com/">
+                                    <img src="/img/widgets/twitter-icon.png" alt="" /></a></li>
+                                <li class="footer-list-item"><a href="http://www.facebook.com/">
+                                    <img src="/img/widgets/fb-icon.png" alt="" /></a></li>
+                                <li class="footer-list-item"><a href="http://www.instagram.com/">
+                                    <img src="/img/widgets/ig-icon.png" alt="" /></a></li>
+                                <li class="footer-list-item"><a href="/rss">
+                                    <img src="/img/widgets/rss-icon.png" alt="" /></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!--========== END FOOTER ==========-->
+        </footer>
+        <!--========== END FOOTER ==========-->
 
-    <!-- Back To Top -->
-    <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
-
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+    </form>
 </body>
 </html>
