@@ -11,6 +11,14 @@ public partial class Controls_BookControl : System.Web.UI.UserControl
     
     protected void Page_Load(object sender, EventArgs e)
     {
+        List<string> source = new List<string>();
 
+        foreach(string genre in Book.Genre)
+        {
+            source.Add(genre);
+        }
+
+        genreRep.DataSource = source;
+        genreRep.DataBind();
     }
 }

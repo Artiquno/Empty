@@ -56,10 +56,10 @@
                     <!-- Search Bar -->
                     <div class="col-lg-6 margin-t-20">
                         <div class="search-bar col-lg-10" style="position: relative; float: left; padding: 0;">
-                            <input class="form-control" type="text" placeholder="Kërko libër" name="q" style="background-color: #f6f6f6; border-bottom-right-radius: 0; border-top-right-radius: 0;" />
+                            <asp:TextBox runat="server" ID="searchBar" CssClass="form-control search-bar" placeholder="Kërko libër" />
                         </div>
                         <div style="position: relative; float: left;">
-                            <button type="submit" class="form-control btn btn-default" style="border-bottom-left-radius: 0; border-top-left-radius: 0;" id="search">Search</button>
+                            <asp:Button runat="server" CssClass="form-control btn btn-default search-button" ID="search" Text="Search" OnClick="search_Click"/>
                         </div>
                     </div>
 
@@ -71,9 +71,9 @@
                                 <li class="js_nav-item nav-item">
                                     <a class="nav-item-child nav-item-hover" href="/Librat/">Librat</a>
                                     <ul class="navbar fallback">
-                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=fantazi">Fantazi</a></li>
-                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=scifi">Sci-Fi</a></li>
-                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?genre=komedi">Komedi</a></li>
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?q=fantasy">Fantazi</a></li>
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?q=science%20fiction">Sci-Fi</a></li>
+                                        <li class="js_nav-item nav-item"><a class="nav-item-child" href="/Librat/?q=comedy">Komedi</a></li>
                                     </ul>
                                 </li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>

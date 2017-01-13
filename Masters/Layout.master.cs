@@ -11,4 +11,10 @@ public partial class Masters_Layout : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void search_Click(object sender, EventArgs e)
+    {
+        string q = searchBar.Text;
+        Response.Redirect("~/Librat/?q=" + q);
+    }
 }

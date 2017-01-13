@@ -1631,3 +1631,13 @@ ul.fallback {
 	width: 200px;
 	height: 350px;
 }
+
+.search-button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.search-bar {
+    background-color: #f6f6f6;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
