@@ -59,7 +59,7 @@
                             <asp:TextBox runat="server" ID="searchBar" CssClass="form-control search-bar" placeholder="Kërko libër" />
                         </div>
                         <div style="position: relative; float: left;">
-                            <asp:Button runat="server" CssClass="form-control btn btn-default search-button" ID="search" Text="Search" OnClick="search_Click"/>
+                            <asp:Button runat="server" CssClass="form-control btn btn-default search-button" ID="search" Text="Search" OnClick="search_Click" UseSubmitBehavior="False" />
                         </div>
                     </div>
 
@@ -78,7 +78,9 @@
                                 </li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/About/">Rreth Nesh</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Kontakt/">Kontakt</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/Login/">Log In</a></li>
+                                <li class="js_nav-item nav-item">
+                                    <asp:LoginStatus runat="server" LoginText="Log In" LoginPageUrl="Login.aspx" LogoutText="Log Out" CssClass="nav-item-child nav-item-hover" />
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -136,6 +138,18 @@
                             <ul class="list-unstyled footer-list">
                                 <li class="footer-list-item"><a href="/Legal/Privacy/">Privacy Policy</a></li>
                                 <li class="footer-list-item"><a href="/Legal/Terms/">Terms &amp; Conditions</a></li>
+                                <li class="footer-list-item">
+                                    <asp:LoginName runat="server" CssClass="username" FormatString="Logged in as <a href='MyProfile.aspx'>{0}</a>"/>
+                                    <asp:LoginView runat="server">
+                                        <RoleGroups>
+                                            <asp:RoleGroup Roles="Admins">
+                                                <ContentTemplate>
+                                                    <a href="/Management">Management</a>
+                                                </ContentTemplate>
+                                            </asp:RoleGroup>
+                                        </RoleGroups>
+                                    </asp:LoginView>
+                                </li>
                             </ul>
                         </div>
                         <div class="col-sm-4 sm-margin-b-30">
