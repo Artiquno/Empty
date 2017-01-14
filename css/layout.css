@@ -1640,4 +1640,10 @@ ul.fallback {
     background-color: #f6f6f6;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.username {
+    text-transform: capitalize;
 }
