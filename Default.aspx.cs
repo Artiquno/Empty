@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using LibrariaModel;
 
 public partial class Default : System.Web.UI.Page
 {
@@ -12,29 +13,27 @@ public partial class Default : System.Web.UI.Page
     {
         List<Book> dataSource = new List<Book>();
 
-        var path = Server.MapPath("~/img/works");
-        var files = Directory.EnumerateFiles(path);
-        string vPath = "/img/works/";
-        
-        for(int i = 0; i < 5; ++i)
+        using (LibrariaEntities ent = new LibrariaEntities())
         {
+            var books = (from b in ent.Books
+                        orderby b.TimesRead descending
+                        select b).Take(5);
 
-            FileInfo fInfo = new FileInfo(files.ElementAt(i));
-
-            string url = vPath + fInfo.Name;
-
-            //Note: Take these from a DB
-            dataSource.Add(new Book()
+            foreach (var book in books)
             {
-                AltText = url,
-                Author = url,
-                Description = "DESCRIPTION: " + url,
-                ImageUrl = url,
-                Title = url,
-                Genre = new List<string>(fInfo.Name.Split(new char[] { '-', '.' }))
-            });
+                dataSource.Add(new Book()
+                {
+                    AltText = book.Title,
+                    Author = book.Author,
+                    Description = book.Description,
+                    ImageUrl = book.CoverUrl,
+                    Title = book.Title,
+                    Genre = new List<string>(book.Genre.Replace(", ", ",").Split(','))
+                });
+            }
         }
 
+        
         this.repeaterBooks.DataSource = dataSource;
         this.repeaterBooks.DataBind();
     }
