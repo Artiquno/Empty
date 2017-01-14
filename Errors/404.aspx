@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Layout.master" AutoEventWireup="true" CodeFile="404.aspx.cs" Inherits="Errors_404" %>
+﻿<%@ Page Title="404 Not Found" Language="C#" MasterPageFile="~/Masters/Layout.master" AutoEventWireup="true" CodeFile="404.aspx.cs" Inherits="Errors_404" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="row">

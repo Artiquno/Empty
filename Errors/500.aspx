@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Masters/Layout.master" AutoEventWireup="true" CodeFile="500.aspx.cs" Inherits="Errors_500" %>
+﻿<%@ Page Title="500 Server Error" Language="C#" MasterPageFile="~/Masters/Layout.master" AutoEventWireup="true" CodeFile="500.aspx.cs" Inherits="Errors_500" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="row">
