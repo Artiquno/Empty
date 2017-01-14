@@ -16,16 +16,41 @@ public partial class Librat_Default : System.Web.UI.Page
         if (q == null)
             q = string.Empty;
 
+        uint page;
+        if (uint.TryParse(Request.QueryString.Get("page"), out page))
+            ;
+        else
+            page = 0;
+
+        const uint take = 10;  // Books per page
+        uint skip = page * take;
+
+        CurrPage.Text = (page + 1).ToString();
+        PagerNext.NavigateUrl = "?q=" + q + "&page=" + (page + 1).ToString();
+        if (page > 0)
+        {
+            PagerPrev.NavigateUrl = "?q=" + q + "&page=" + (page - 1).ToString();
+            PagerPrev.Visible = true;
+        }
+
         using (LibrariaEntities ent = new LibrariaEntities())
         {
-            var books = from b in ent.Books
-                        where (b.Genre.Contains(q) ||
-                            b.Author.Contains(q) ||
-                            b.Title.Contains(q) ||
-                            b.ISBN10.Contains(q) ||
-                            b.ISBN13.Contains(q)) == true
+            var books = (from b in ent.Books
+                        where (b.Genre.Contains(q)
+                        || b.Author.Contains(q)
+                        || b.Title.Contains(q)
+                        || b.ISBN10.Contains(q)
+                        || b.ISBN13.Contains(q)) == true
                         orderby b.TimesRead descending
-                        select b;
+                        select b)
+                        .Skip((int)skip)    
+                        .Take((int)take);   // Casting needed because C#
+
+            // Bug: Still shows if count == take
+            if (books.Count() < take)
+            {
+                PagerNext.Visible = false;
+            }
 
             foreach (var book in books)
             {
@@ -41,8 +66,10 @@ public partial class Librat_Default : System.Web.UI.Page
             }
         }
         
-        Search.Text = dataSource.Count() + " " + (dataSource.Count() == 1 ? " liber " : " libra ") + "per kerkimin " + q;
-
+        Search.Text = dataSource.Count() + " "
+            + (dataSource.Count() == 1 ? " liber " : " libra ")
+            + (q == string.Empty ? "" : "per kerkimin " + q);
+         
         this.repeaterBooks.DataSource = dataSource;
         this.repeaterBooks.DataBind();
     }
