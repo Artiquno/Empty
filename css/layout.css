@@ -1647,3 +1647,15 @@ ul.fallback {
 .username {
     text-transform: capitalize;
 }
+
+.error {
+    color: red;
+}
+
+.input-group .label {
+    color: #333;
+    width: 150px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+}
