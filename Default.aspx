@@ -15,7 +15,6 @@
 
 </asp:Content>
 
-<%-- Body --%>
 <asp:Content runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
     <asp:ScriptManagerProxy runat="server">
         <Scripts>
@@ -33,8 +32,6 @@
         </div>
     </div>
 
-    <!--========== PAGE LAYOUT ==========-->
-    <!-- Products -->
     <div id="products">
         <div class="container content-lg">
             <div class="row text-center">
@@ -43,7 +40,6 @@
                     <%--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>--%>
                 </div>
             </div>
-            <!--// end row -->
 
             <div class="row">
                 <div class="content-md container">
@@ -58,26 +54,20 @@
             </div>
         </div>
     </div>
-    <!-- End Products -->
 
-    <!-- Promo Banner -->
     <div class="promo-banner">
         <div class="container-sm content-lg">
             <h2 class="promo-banner-title">Shisni librat tuaj të vjetër</h2>
             <p class="promo-banner-text">Nëse keni një libër të vjetër për të shitur, na kontaktoni <a href="/Kontakt/">këtu</a>.</p>
         </div>
     </div>
-    <!-- End Promo Banner -->
 
-    <!-- Testimonials -->
     <div class="content-md container">
         <div class="row">
             <div class="col-sm-9">
                 <h2>Nga klientët tanë</h2>
 
-                <!-- Swiper Testimonials -->
                 <div class="swiper-slider swiper-testimonials">
-                    <!-- Swiper Wrapper -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <blockquote class="blockquote">
@@ -118,17 +108,12 @@
                             </blockquote>
                         </div>
                     </div>
-                    <!-- End Swiper Wrapper -->
 
-                    <!-- Pagination -->
                     <div class="swiper-testimonials-pagination"></div>
                 </div>
-                <!-- End Swiper Testimonials -->
             </div>
         </div>
-        <!--// end row -->
     </div>
-    <!-- End Testimonials -->
 
     <div id="contact">
         <div class="gmap">
@@ -138,6 +123,6 @@
             </address>
         </div>
     </div>
-    <!--========== END PAGE LAYOUT ==========-->
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async="async" defer="defer"></script>
 </asp:Content>
