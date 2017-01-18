@@ -2,7 +2,6 @@
 
 
 <div class="masonry-grid-item">
-    <!-- Work -->
     <div class="work work-popup-trigger">
         <div class="work-overlay books-most-read col-md-8">
             <img class="full-width img-responsive" src='/img/works/<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
@@ -38,7 +37,9 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="margin-t-10 sm-margin-t-0">
-                            <img class="full-width img-responsive" src='/img/works/<%=this.Book.ImageUrl %>' alt='<%=this.Book.AltText %>' />
+                            <asp:ImageButton ID="Image" runat="server"
+                                CssClass="full-width img-responsive"
+                                OnClick="DL_Click" />
                         </div>
                     </div>
                 </div>
@@ -46,5 +47,4 @@
             </div>
         </div>
     </div>
-<!-- End Work -->
 </div>

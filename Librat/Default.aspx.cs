@@ -56,6 +56,9 @@ public partial class Librat_Default : System.Web.UI.Page
             {
                 dataSource.Add(new Book()
                 {
+                    Id = book.Id,
+                    DlUrl = book.BookUrl,
+                    TimesRead = book.TimesRead,
                     AltText = book.Title,
                     Author = book.Author,
                     Description = book.Description,
