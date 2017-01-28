@@ -36,6 +36,28 @@
             </div>
             <asp:Button runat="server" OnClick="Submit_Click" Text="Submit" />
             <asp:ChangePassword ID="ChangePass" runat="server" ContinueDestinationPageUrl="./MyProfile.aspx"></asp:ChangePassword>
+            
+            <table class="shopping-cart">
+                <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Remove</th>
+                </tr>
+                <asp:Repeater ID="ShoppingCartRepeater" runat="server">
+                    <ItemTemplate>
+                        <tr>
+                            <td>
+                                <asp:CheckBox runat="server" ID="RemoveBook" />
+                            </td>
+                            <td><%# ((List<string>)Container.DataItem)[0] %></td>
+                            <td><%# ((List<string>)Container.DataItem)[1] %></td>
+                        </tr>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </table>
+            <asp:Button Text="Remove Selected" runat="server" UseSubmitBehavior="false" />
+            <asp:Button Text="Clear" runat="server"  UseSubmitBehavior="false" />
+            <asp:Button Text="Buy" runat="server" UseSubmitBehavior="false" />
         </div>
     </div>
 </asp:Content>

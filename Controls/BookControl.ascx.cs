@@ -59,5 +59,18 @@ public partial class Controls_BookControl : System.Web.UI.UserControl
             Response.TransmitFile(path);
             Response.End();
         }
+        
+    }
+
+    protected void AddToCart(object sender, EventArgs args)
+    {
+        string sessionName = Page.User.Identity.Name + "-cart";
+
+        if (Session[sessionName] == null)
+        {
+            Session[sessionName] = new List<long>();
+        }
+
+        ((List<long>)Session[sessionName]).Add(Book.Id);
     }
 }
